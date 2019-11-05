@@ -1,0 +1,49 @@
+﻿@model CUS_Mostrar_Resultados.Models.TUsuarioModalidadTanda
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TUsuarioModalidadTanda</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IumtPuntajeTotal)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IumtPuntajeTotal)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IumtPista)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IumtPista)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IumtEstado)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IumtEstado)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FkIumtCodPartNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FkIumtCodPartNavigation.VmUmArchivoB)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FkIumtCodTanNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FkIumtCodTanNavigation.VtDescripcion)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.PkVumtCod">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
